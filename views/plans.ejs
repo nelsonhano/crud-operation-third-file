@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="float-left">Plans</h1>
+        <a href="/add-plan" class="btn btn-sm btn-primary float-right mt-2">Add plan</a>
+        <hr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (const plan of plans) { %>
+                  <tr>
+                      <td><%= plan.name %></td>
+                      <td><%= plan.price %></td>
+                      <td><%= plan.description %></td>
+                      <td>
+                          <a href="/edit-plan/<%= plan.id %>">edit</a>
+                          <a href="/delete-plan/<%= plan.id %>" class="text-danger">delete</a>
+                        </td>
+                  </tr>  
+                <% } %> 
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="/bootstrap/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

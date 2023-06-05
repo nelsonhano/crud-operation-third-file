@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Edit Course</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1>Edit a <%= course%></h1>
+        <hr>
+        <form action="" class="row" method="post">
+            <div class="form-group col-sm-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" value="<% course.name %> " name="name" placeholder="Course name">
+            </div>
+            <div class="form-group col-sm-12">
+                <label for="description">Description</label>
+                <textarea type="text" class="form-control" id="description" name="description"
+                    placeholder="Description"><%= course.description %></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="instructor">Instructor</label>
+                <select name="instructor" id="instructor">
+                    <option value="">Select an instructor</option>
+                    <% for( let instructor of instructors ) { %>
+                        <option value="<%= instructor.id %> ">
+                            <%= instructor.name %>
+                        </option>
+                    <% } %>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary float-right">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

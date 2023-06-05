@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Courses</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="float-left">Courses</h1>
+        <a href="/add-plan" class="btn btn-sm btn-primary float-right mt-2">Add plan</a>
+        <hr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (const course of courses) { %>
+                  <tr>
+                      <td><%= course.name %></td>
+                      <td><%= course.price %></td>
+                      <td><%= course.description %></td>
+                      <td>
+                          <a href="/edit-course/<%= course.id %>"><i class="fa fa-edit fa-2x"></i></a>
+                          <a href="/delete-course/<%= course.id %>" class="text-danger"><i class="fa fa-trash fa-2x"></i></a>
+                        </td>
+                  </tr>  
+                <% } %> 
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="/bootstrap/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

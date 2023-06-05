@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Add Course</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1>Add an instructor</h1>
+        <hr>
+        <form action="" class="row" method="post">            
+            <div class="form-group col-sm-6">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" name="surname" placeholder="surname">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="first_name">First name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="other_name">Other name</label>
+                <input type="text" class="form-control" id="other_name" name="other_name" placeholder="Other name">
+            </div>
+            <div class="form-group col-sm-6">
+                <label>Gender</label><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" value="Male" name="gender">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" value="Female" name="gender">Female
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="dob">Date of birth</label>
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="DAte of birth">            
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="employment_date">Employment date</label>
+                <input type="date" class="form-control" id="employment_date" name="employment_date" placeholder="Employment date">
+            </div>
+            
+            <div class="form-group col-sm-6">
+                <label for="address">Address</label>
+                <textarea name="" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group col-sm-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Enter your password">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+                    placeholder="Confirm your password">
+            </div>
+            
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary float-right">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

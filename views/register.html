@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1>Register with us today</h1>
+        <hr>
+        <form action="/register-submit" class="row" method="post">
+            <div class="form-group col-sm-6">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter your surname">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="first_name">First name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name"
+                    placeholder="Enter your first name">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="other_name">Other name</label>
+                <input type="text" class="form-control" id="other_name" name="other_name"
+                    placeholder="Enter your other_name">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="disability">Disability</label>
+                <input type="text" class="form-control" id="disability" name="disability">
+            </div>
+            <!--gender input -->
+            <div class="form-group col-sm-6">
+                <label>Gender</label><br>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" value="Male" name="gender">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" value="Female" name="gender">Female
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="plan">Plan</label>
+                <select name="plan" class="form-control" id="plan">
+                    <option value="">Select a plan</option>
+                    <option value="Plan 1">Plan 1</option>
+                    <option value="Plan 2">Plan 2</option>
+                    <option value="Plan 3">Plan 3</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-12">
+                <label for="address">Address</label>
+                <textarea name="" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group col-sm-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Enter your password">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+                    placeholder="Confirm your password">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary float-right">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/bootstrap/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
